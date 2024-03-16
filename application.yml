@@ -1,1 +1,28 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: 7093160053@kK
+    url: jdbc:mysql://localhost:3306/feign
+    username: root
+  application:
+   name: employee-api
 
+  boot: 
+    admin:
+      client: 
+        url: http://localhost:1111/   
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defauluZone:  http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
