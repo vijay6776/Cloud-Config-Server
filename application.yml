@@ -26,3 +26,6 @@ eureka:
       defauluZone:  http://localhost:8761/eureka/
   instance:
     hostname: localhost
+springdoc:
+  swagger-ui:
+    path: swagger-ui.html
